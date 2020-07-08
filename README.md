@@ -10,7 +10,7 @@ Machine Learning Systems: Designs that scale teaches you to design and implement
 
 ### PART 1 FUNDAMENTALS OF REACTIVE MACHINE LEARNING
 
-- Learning reactive machine learning
+- [Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-sytems-ch1)
     - Chapter 1 introduces machine learning, reactive systems, and the goals of reac- tive machine learning.
 - Using reactive tools
     - Chapter 2 introduces three of the technologies the book uses: Scala, Spark, and Akka.
