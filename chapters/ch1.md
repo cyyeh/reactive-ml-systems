@@ -8,6 +8,20 @@
 - Understanding the reactive systems design paradigm
 - The reactive approach to building machine learning systems
 
+## Brief Summary
+
+- Even simple machine learning systems can fail.
+- Machine learning should be viewed as an application, not as a technique.
+- A machine learning system is composed of five components, or phases:
+    - The data-collection component ingests data from the outside world into the machine learning system
+    - The data-transformation component transforms raw data into useful derived representations of that data: features and concepts.
+    - The model-learning component learns models from the features and concepts.
+    - The model-publishing component makes a model available to make predictions.
+    - The model-serving component connects models to requests for predictions.
+- The reactive systems design paradigm is a coherent approach to building better systems:
+    - Reactive systems are responsive, resilient, elastic, and message-driven.
+    - Reactive systems use the strategies of replication, containment, and supervision as concrete approaches for maintaining the reactive traits.
+
 ## Key Points
 
 ### An example machine learning system
@@ -56,5 +70,22 @@
 - Reactive systems are defined by four traits and three strategies. The paradigm as a whole is a way of codify- ing an approach to building systems that can serve modern user expectations for things like interactivity and availability.
 - Traits of Reactive Systems
 ![](https://i.imgur.com/tZDj9JW.png)
+    - responsive: they consistently return timely responses to users
+    - resilient: they need to maintain responsiveness in the face of failure
+        - Providing some sort of acceptable response even when things don’t go as planned is a key part of ensuring that users view a system as being responsive
+    - elastic: they need to remain responsive despite varying loads
+        - Elastic systems should respond to increases or decreases in load
+    - message-driven: they communicate via asynchronous, non-blocking message passing
+        - A loosely coupled system organized around message passing can make it easier to detect failure or issues with load
+        - A design with this trait helps contain any of the effects of errors to just messages about bad news, rather than flaming production issues that need to be immediately addressed
 - Reactive Strategies
 ![](https://i.imgur.com/BbqxhGU.png)
+    - replication: they have the same component executing in more than one place at the same time
+        - More generally, this means that data, whether at rest or in motion, should be redundantly stored or processed
+        - Spark gives you automatic, fine-grained replication so that the system can recover from failure
+    - containment: to prevent the failure of any single component of the system from affecting any other component
+        - The term containment might get you thinking about specific technologies like Docker and rkt, but this strategy isn’t about any one implementation
+    - supervision: to organize components, you explicitly identify the components that could fail and make sure that some other component is responsible for their lifecycles
+        - Should their behavior deviate from acceptable bounds, the supervisor would stop sending them messages requesting predictions. In fact, the model supervisor could even completely destroy a model it knows to be bad, making the system potentially self-healing
+- Making machine learning systems reactive
+- When not to use reactive machine learning
