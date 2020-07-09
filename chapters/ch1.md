@@ -1,4 +1,4 @@
-# [Chapter 1: Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-sytems-ch1)
+# [Chapter 1: Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-systems-ch1)
 
 ###### tags: `ml-systems`
 
