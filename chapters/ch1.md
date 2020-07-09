@@ -1,9 +1,3 @@
----
-title: "Chapter 1: Learning reactive machine learning"
-description: Understanding the reactive systems design paradigm and the reactive approach to build machine learning systems
-image: https://i.imgur.com/l5oZ7l6.png
----
-
 # [Chapter 1: Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-systems-ch1)
 
 ###### tags: `ml-systems`
