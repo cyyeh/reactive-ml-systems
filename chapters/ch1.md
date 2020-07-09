@@ -95,7 +95,19 @@
 ![](https://i.imgur.com/Qcy0tHL.png)
 
 - Ultimately, a reactive machine learning system gives you the ability to deliver value through ever better predictions. That’s why reactive machine learning is worth understanding and applying.
-- The reactive machine learning approach is based on two key insights into the characteristics of data in a machine learning system: it is **uncertain**, and it is **effectively infinite**.
+- The reactive machine learning approach is based on two key insights into the characteristics of data in a machine learning system: it is uncertain, and it is effectively infinite.
+- data characteristics: **infinite data**
+    - strategy 1: **laziness**
+        - delay of execution
+    - strategy 2: **pure functions**
+        - evaluating the function must not result in some sort of side effect, such as changing the state of a variable or performing I/O
+        - referential transparency: the function must always return the same value when given the same arguments
+        - pure functions are a foundational concept in a style of programming known as functional programming, which we’ll use throughout this book
+- data characteristics: **uncertain data**
+    - strategy 1: **immutable facts**
+        - this data can be written once and never modified; it is written in stone. The use of immutable facts allows us to reason about uncertain views of the world at specific points in time
+    - strategy 2: **possible worlds**
+        - by building our data models and queries with the concept of possible alternative worlds, we’ll be able to more effectively reason about the real range of potential outcomes in our system
 
 #### When not to use reactive machine learning
 
