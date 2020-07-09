@@ -10,14 +10,14 @@ Machine Learning Systems: Designs that scale teaches you to design and implement
 
 ### PART 1 FUNDAMENTALS OF REACTIVE MACHINE LEARNING
 
-- [Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-sytems-ch1)
+- [Learning reactive machine learning](https://hackmd.io/@distributed-systems-engineering/reactive-ml-systems-ch1)
     - Chapter 1 introduces machine learning, reactive systems, and the goals of reac- tive machine learning.
-- [Using reactive tools](https://hackmd.io/@distributed-systems-engineering/reactive-ml-sytems-ch2)
+- [Using reactive tools](https://hackmd.io/@distributed-systems-engineering/reactive-ml-systems-ch2)
     - Chapter 2 introduces three of the technologies the book uses: Scala, Spark, and Akka.
 
 ### PART 2 BUILDING A REACTIVE MACHINE LEARNING SYSTEM
 
-- Collecting data
+- [Collecting data](https://hackmd.io/@distributed-systems-engineering/reactive-ml-systems-ch3)
     - Chapter 3 discusses the challenges of collecting data and ingesting it into a machine learning system. As part of that, it introduces various concepts around handling uncertain data. It also goes into detail about how to persist data, focusing on properties of distributed databases.
 - Generating features
     - Chapter 4 gets into how you can extract features from raw data and the various ways in which you can compose this functionality.
